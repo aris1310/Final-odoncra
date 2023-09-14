@@ -1,0 +1,17 @@
+.imgButton{
+    width: 25px;
+    height: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 20%;
+    height: 20%;
+}
+
+.imgDoctor{
+    width: 200px;
+    height: 200px;
+}
