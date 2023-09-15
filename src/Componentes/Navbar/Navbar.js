@@ -1,11 +1,18 @@
 import React from 'react'
 import style from "./Navbar.module.css"
 import { Link } from 'react-router-dom'
+import { useCharStates } from '../../GContext/Context'
 
 const Navbar = () => {
+  const {dispatch} = useCharStates()
   const direcciones= [{route:"/", name:"Home"},
                       {route:"/contact", name:"Contact"},
                       {route:"/favs", name:"Favs"}]
+
+
+  const changeTheme = () => {
+    dispatch({type: 'SWITCH_THEME'})
+  }
   return (
     <div className={style.div}>
         <h2>DH Odonto</h2>
@@ -16,7 +23,7 @@ const Navbar = () => {
             </Link>
           ))}
         </nav>
-        <button>Change theme</button>
+        <button onClick={changeTheme}>Change theme</button>
     </div>
   )
 }

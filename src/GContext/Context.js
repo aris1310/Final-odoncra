@@ -8,6 +8,8 @@ const reducer = (state, action) => {
   switch(action.type){
       case 'ADD_FAV':
           return {...state, favs: [...state.favs, action.payload]}
+      case 'SWITCH_THEME':
+            return  {...state, theme: !state.theme}
       default:
           throw new Error()
   }
@@ -17,8 +19,15 @@ const initialFavState = localFavs ? localFavs : []
 
 const initialState = {
   favs: initialFavState,
-  theme: ''
+  theme: false,
+
 }
+
+// const darkMode = ()=> {
+//   if (initialState.theme) {
+//     return "div"
+//   }
+// }
 
 
 const Context = ({children}) => {
