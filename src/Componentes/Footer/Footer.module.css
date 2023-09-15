@@ -1,0 +1,30 @@
+.dhLogo{
+    width: 20%;
+    height: 30%;
+}
+
+.divFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divOdo{
+    background-color: crimson;
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 40px;
+    padding-top:15px;
+}
+
+.redes{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.divRedes{
+    display: flex;
+    justify-content:space-between;
+   
+}
