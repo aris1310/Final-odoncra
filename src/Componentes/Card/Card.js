@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { useCharStates } from '../../GContext/Context'
 
 const Card = ({char}) => {
-  const {state, dispatch} = useCharStates()
+  const {dispatch} = useCharStates()
   const addFav = () => {
       dispatch({type: 'ADD_FAV', payload: char})
     }
