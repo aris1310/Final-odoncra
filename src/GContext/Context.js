@@ -23,11 +23,7 @@ const initialState = {
 
 }
 
-// const darkMode = ()=> {
-//   if (initialState.theme) {
-//     return "div"
-//   }
-// }
+
 
 
 const Context = ({children}) => {
