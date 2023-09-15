@@ -1,11 +1,7 @@
-
+import styles from "./Form.module.css"
 
 
 const Form = ({setEnv,setError,info,setInfo}) => {
-
-  
-
-
 
   const handleChange = (e)=>{
     setInfo({
@@ -25,11 +21,9 @@ const Form = ({setEnv,setError,info,setInfo}) => {
     }
   }
 
-  
-  
   return (
   
-  <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit} className={styles.form}>
     <input type="text" name='name' placeholder='Full Name' onChange={handleChange}/>
     <input type="email" name='email' placeholder='Email' onChange={handleChange}/>
     <button>Send</button>
