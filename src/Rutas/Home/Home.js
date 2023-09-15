@@ -4,11 +4,11 @@ import Card from '../../Componentes/Card/Card'
 import styles from "./Home.module.css"
 
 const Home = () => {
-  const chard = useCharStates()
+  const {char} = useCharStates()
   return (
     <>
     <div className={styles.div}>
-    {chard.map(char=> <Card char={char} key={char.id}/>)}
+    {char.map(char=> <Card char={char} key={char.id}/>)}
     </div>
     </>
   )
