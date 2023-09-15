@@ -9,6 +9,7 @@
 }
 
 .form button{
-    width: 300px;
-    margin: 20px
+    width: 200px;
+    margin: 20px;
+    height: 30px;
 }
